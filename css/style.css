@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width:100%;
+    background-image: url(../files/bg\ img.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height:100vh;
+    padding-top: 90px;
+    padding-left: 10px;
+}
+.video-container{
+    width:45%;
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 10px;
+    border: 15px solid #636466; */
+}
+
+.controls{
+    background-color:rgba(0,0,0,0.5);
+    width:100%;
+    padding:15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.video-controls{
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.resolution-controls{
+    display: flex;
+    justify-content: flex-end;
+    gap:30px;
+}
+
+.volume-control{
+    display: flex;
+    align-items: center;
+}
+#muteUnmute{
+    padding:0 30px;
+}
+input[type="range"]{
+    width:90px;
+    height:8px;
+    accent-color: #fff;
+}
+
+button{
+    background: none;
+    border: none;
+    color:#fff;
+    font-size: 15px;
+}
+select{
+    outline: none;
+}
+video{
+    width: 100%;
+}
+i{
+    font-size: 20px;
+    color: #fff;
+}
+select{
+    background: none;
+    color:#fff;
+    outline:none;
+}
+option{
+    color:#000;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video src="files/360p.mp4" id="main-video" loop></video>
+            <div class="controls">
+                <div class="video-controls">
+                    <button id="backward"><i class="bi bi-skip-backward-fill"></i></button>
+                    <button id="playPause"><i class="bi bi-play-fill"></i></button>
+                    <button id="forward"><i class="bi bi-skip-forward-fill"></i></button>
+                </div>
+                <div class="volume-control">
+                    <button id="muteUnmute"><i class='bi bi-volume-up-fill'></i> mute</button>
+                    <label id="volume-icon" for="volume"><i class='bi bi-volume-up-fill'></i></label>
+                    <input type="range" name="volume" id="volume" min="0" max="100" value="100">
+                </div>
+                <div class="resolution-controls">
+                    <a id="download-button"><button ><i class="bi bi-download"></i></button></a>
+                    <select  id="resolution">
+                        <option value="files/360p.mp4">360p</option>
+                        <option value="files/1080p.mp4">1080p</option>
+                    </select>
+                    <button id="fullscreen"><i class="bi bi-fullscreen"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
